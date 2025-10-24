@@ -3,18 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>coHOMES</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="hero-bg">
+    <section id="hero" class="hero-bg">
       <div class="overlay">
         <nav>
-          <div><img src="./images/Vector.png" alt="logo" class="logo" /></div>
-          <div></div>
-          <div></div>
+          <div>
+            <a href="#"
+              ><img src="./images/logo.png" alt="logo" class="logo"
+            /></a>
+          </div>
+          <div class="desktop-nav">
+            <div class="nav-links">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Properties</a></li>
+                <li><a href="">Find Roommates</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+            <div class="buttons">
+              <a href="#" class="login">Login</a>
+              <a href="#" class="register">Register</a>
+            </div>
+          </div>
         </nav>
+        <div class="hero-content">
+          <h1>Elegant Villa In <br />Wuse 2</h1>
+          <p>3 BD | 3 BA</p>
+          <div>
+            <img src="./images/hero-c1.png" alt="" />
+            <img src="./images/hero-c2.png" alt="" />
+            <img src="./images/hero-c3.png" alt="" />
+          </div>
+          <div class="hero-bottom">
+            <p>
+              <span id="rent">Rent</span><span id="buy">Buy</span
+              ><span>Roommate</span>
+            </p>
+          </div>
+        </div>
+        <div class="hero-select">
+          <p>
+            Location
+            <span class="dropdown-container"
+              ><span class="dropdown-icon" onclick="toggleDropdownMenu(event)"
+                ><img src="./images/dropdown.png" alt="dropdown" /><span
+                  class="current-option"
+                  >Abuja</span
+                ></span
+              ><span class="dropdown-menu" id="dropdownMenu"
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, 'Abuja')"
+                  >Abuja</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, 'Lagos')"
+                  >Lagos</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, 'Delta')"
+                  >Delta</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, 'Anambra')"
+                  >Anambra</span
+                ></span
+              ></span
+            >
+          </p>
+          <p>
+            Property type
+            <span class="dropdown-container"
+              ><span class="dropdown-icon" onclick="toggleDropdownMenu(event)"
+                ><img src="./images/dropdown.png" alt="dropdown" /><span
+                  class="current-option"
+                  >Condo</span
+                ></span
+              ><span class="dropdown-menu" id="dropdownMenu"
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, 'Condo')"
+                  >Condo</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, 'Apartment')"
+                  >Apartment</span
+                ></span
+              >
+            </span>
+          </p>
+          <p>
+            Bedroom
+            <span class="dropdown-container"
+              ><span class="dropdown-icon" onclick="toggleDropdownMenu(event)"
+                ><img src="./images/dropdown.png" alt="dropdown" /><span
+                  class="current-option"
+                  >2</span
+                ></span
+              ><span class="dropdown-menu" id="dropdownMenu"
+                ><span class="dropdown-item" onclick="selectOption(event, '2')"
+                  >2</span
+                ><span class="dropdown-item" onclick="selectOption(event, '3')"
+                  >3</span
+                ><span class="dropdown-item" onclick="selectOption(event, '4')"
+                  >4</span
+                ><span class="dropdown-item" onclick="selectOption(event, '5')"
+                  >5</span
+                ><span class="dropdown-item" onclick="selectOption(event, '1')"
+                  >1</span
+                ></span
+              ></span
+            >
+          </p>
+          <p>
+            Max Price
+            <span class="dropdown-container"
+              ><span class="dropdown-icon" onclick="toggleDropdownMenu(event)"
+                ><img src="./images/dropdown.png" alt="dropdown" /><span
+                  class="current-option"
+                  >$250,000</span
+                ></span
+              ><span class="dropdown-menu" id="dropdownMenu"
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, '$250,000')"
+                  >$250,000</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, '$50,000')"
+                  >$50,000</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, '$150,000')"
+                  >$150,000</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, '$350,000')"
+                  >$350,000</span
+                ><span
+                  class="dropdown-item"
+                  onclick="selectOption(event, '$650,000')"
+                  >$650,000</span
+                ></span
+              ></span
+            >
+          </p>
+          <a href="#"><img src="./images/search.png" alt="search" /></a>
+        </div>
       </div>
-    </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
