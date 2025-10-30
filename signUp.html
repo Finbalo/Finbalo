@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Sign Up</title>
+  </head>
+  <body class="h-fit bg-linear-to-br from-[#1984a5] to-[#db21f3]">
+    <div
+      class="bg-[#ffffff] w-[50%] mx-auto rounded-md p-[30px] my-[46px] grid grid-cols-2 grid-rows-[40px repeat(5, minmax(0, 1fr))] gap-[15px]"
+    >
+      <h1
+        class="col-start-1 col-end-3 row-start-1 row-end-2 font-semibold text-[22px] after:h-[3px] after:rounded-xs after:w-6 after:bg-linear-to-r after:from-[#1984a5] after:to-[#db21f3] after:block"
+      >
+        Registration
+      </h1>
+      <div class="w-[90%]">
+        <label for="full-name" class="block pb-[5px] font-medium">Full Name</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="py-2 px-3 border-2 border-solid border-[#bbb7b7] rounded-[5px] w-full"
+        />
+      </div>
+      <div class="w-[90%]">
+        <label for="email" class="block pb-[5px] font-medium">Email</label>
+        <input
+          type="text"
+          placeholder="Enter your email"
+          class="py-2 px-3 border-2 border-solid border-[#bbb7b7] rounded-[5px] w-full"
+        />
+      </div>
+      <div class="w-[90%]">
+        <label for="password" class="block pb-[5px] font-medium">Password</label>
+        <input
+          type="text"
+          placeholder="Enter your password"
+          class="py-2 px-3 border-2 border-solid border-[#bbb7b7] rounded-[5px] w-full"
+        />
+      </div>
+      <div class="col-start[2] col-end-3 row-start-2 row-end-3">
+        <label for="username" class="block pb-[5px] font-medium">Username</label>
+        <input
+          type="text"
+          placeholder="Enter your username"
+          class="py-2 px-3 border-2 border-solid border-[#bbb7b7] rounded-[5px] w-full"
+        />
+      </div>
+      <div class="col-start-[2] col-end-[3] row-start-[3] row-end-[4]">
+        <label for="phone-number" class="block pb-[5px] font-medium">Phone Number</label>
+        <input
+          type="text"
+          placeholder="Enter your number"
+          class="py-2 px-3 border-2 border-solid border-[#bbb7b7] rounded-[5px] w-full"
+        />
+      </div>
+      <div>
+        <label for="confirm-password" class="block pb-[5px] font-semibold"
+          >Confirm Password</label
+        >
+        <input
+          type="text"
+          placeholder="Confirm your password"
+          class="py-2 px-3 border-2 border-solid border-[#bbb7b7] rounded-[5px] w-full"
+        />
+      </div>
+      <div class="col-start-[1] col-end-[3] row-start-[5] row-end-[6] mb-[20px]">
+        <label for="Gender" class="font-semibold text-[19px]">Gender</label>
+        <div class="flex gap-[110px] items-center justify-start pt-[10px]">
+            <span><input type="radio" name="gender" class="cursor-pointer"><span class="pl-[7px]">Male</span></span>
+            <span><input type="radio" name="gender" class="cursor-pointer"><span class="pl-[7px]">Female</span></span>
+            <span class="bg-linear-to-b from-[#FF0000] via-17% via-[#FF8C00] via-17% via-[#FFED00] via-17% via-[#0080] via-17% via-[#0000FF] via-17% via-[#4B0082] via-16% to-[#EE82EE] via-16%"><input type="radio" name="gender" checked class="cursor-pointer"><span class="pl-[7px]"></span>Gay</span>
+        </div>
+      </div>
+        <button type="submit" class="py-7px font-semibold text-[18px] text-[#ffffff] col-start-[1] col-end-[3] row-start-[6] row-end-[7] text-center bg-linear-to-r from-[#1984a5]  to-[#db21f3] py-[10px] cursor-pointer rounded-[5px] mb-[30px]">Register</button>
+    </div>
+  </body>
+</html>
